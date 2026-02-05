@@ -188,26 +188,31 @@
     </section>
 
     <!-- تواصل -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title text-center">تواصل معي</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <form>
-                        <div class="mb-3">
-                            <label class="form-label">الاسم</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">البريد الإلكتروني</label>
-                            <input type="email" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">رسالتك</label>
-                            <textarea class="form-control" rows="5"></textarea>
-                        </div>
-                        <button type="button" class="btn btn-primary">إرسال الرسالة</button>
-                    </form>
+    <form action="https://formsubmit.co/sahergha2@gmail.com" method="POST">
+    <div class="mb-3">
+        <label class="form-label">الاسم</label>
+        <input type="text" name="الاسم" class="form-control" placeholder="اكتب اسمك" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">البريد الإلكتروني</label>
+        <input type="email" name="البريد" class="form-control" placeholder="example@email.com" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">رسالتك</label>
+        <textarea name="الرسالة" class="form-control" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+    </div>
+
+    <!-- اختياري: عشان يرجعك لصفحتك بعد الإرسال (بدل صفحة FormSubmit) -->
+    <input type="hidden" name="_next" value="https://sahergha.github.io/Saher/شكرا.html">
+
+    <!-- اختياري: تعطيل reCAPTCHA إذا ما تبغاه (بس أنصحك تسيبه مفعل ضد السبام) -->
+    <!-- <input type="hidden" name="_captcha" value="false"> -->
+
+    <!-- اختياري: موضوع الإيميل اللي يجيك -->
+    <input type="hidden" name="_subject" value="رسالة جديدة من موقع ساهر غانم">
+
+    <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+    </form>
 
                     <div class="contact-info text-center mt-4">
                         <p><i class="fab fa-whatsapp fa-lg me-2"></i> واتساب: <a href="https://wa.me/972567300089" target="_blank" style="color:#00bfff;">+972 567 300 089</a></p>
